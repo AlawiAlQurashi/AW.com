@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------
 * Project Name     : Scorpina website
 * Author           : Scorpina Team
-* Version          : 1.0.0
+* Version          : 1.0.0 Arabic
 * Created          : May 2021
 * File Description : Main css file of this Project
 *------------------------------------------------------------
@@ -19,7 +19,37 @@ body {
     overflow-x      : hidden !important;
     background-color: #ffffff;
     line-height     : 1.5;
-    background      : url(../img/Layer\ 0.png) no-repeat;
+    direction       : rtl;
+}
+
+body::before {
+    content        : '';
+    position       : absolute;
+    background     : url(../img/Layer\ 0.png) no-repeat padding-box;
+    background-size: cover;
+    top            : -94px;
+    right          : -1037px;
+    width          : 2075px;
+    height         : 1800px;
+}
+
+body.index-body::before {
+    top   : 483px;
+    right : -1680px;
+    width : 2883px;
+    height: 2881px;
+}
+
+body.service-body::before {
+    height: 1311px;
+}
+
+body.body-seo::before {
+    height: 1140px;
+}
+
+body.body-motion::before {
+    height: 1700px;
 }
 
 * {
@@ -89,15 +119,16 @@ section p {
 }
 
 .section-title h2::before {
-    content         : '';
-    position        : absolute;
-    left            : 44%;
-    right           : 0;
-    bottom          : -3px;
-    height          : 4px;
-    width           : 80px;
-    background-color: #000000;
-    border-radius   : 50px;
+    content            : '';
+    position           : absolute;
+    left               : 44%;
+    /* right           : 0; */
+    bottom             : -3px;
+    height             : 4px;
+    width              : 80px;
+    background-color   : #000000;
+    border-radius      : 50px;
+    top                : 60px;
 }
 
 /*----------------------
@@ -203,12 +234,12 @@ Hero
 }
 
 .hero-text h1 {
-    font-size     : 40px;
-    color         : #ffffff;
-    font-weight   : 400;
-    text-transform: uppercase;
-    margin-top    : 20px;
-    white-space: nowrap;
+    font-size                   : 40px;
+    color                       : #ffffff;
+    font-weight                 : 400;
+    text-transform              : uppercase;
+    margin-top                  : 20px;
+    white-space                 : nowrap;
     position                    : absolute;
     display                     : block;
     right                       : 30%;
@@ -253,7 +284,7 @@ Hero
 
     10%,
     15% {
-        left   :  30%;
+        left   : 30%;
         opacity: 1;
     }
 
@@ -278,7 +309,7 @@ Hero
 
     25%,
     35% {
-        left   :  30%;
+        left   : 30%;
         opacity: 1;
     }
 
@@ -303,7 +334,7 @@ Hero
 
     45%,
     55% {
-        left   :  30%;
+        left   : 30%;
         opacity: 1;
     }
 
@@ -328,7 +359,7 @@ Hero
 
     65%,
     75% {
-        left   :  30%;
+        left   : 30%;
         opacity: 1;
     }
 
@@ -405,9 +436,19 @@ NavBar
     font-size     : 25px;
     color         : #363636;
     text-transform: capitalize;
-    font-weight   : 400;
-    padding       : 5px 0;
+    font-weight   : 600;
+    padding       : 10px 0 0 0;
     position      : relative;
+}
+
+.navbar .nav-item:nth-child(1) .nav-link::before {
+    display: none;
+}
+
+.navbar .nav-item:nth-child(1) {
+    padding   : 0px;
+    margin-top: -9px;
+
 }
 
 .navbar .nav-item .nav-link::before {
@@ -415,11 +456,12 @@ NavBar
     position        : absolute;
     left            : 0;
     right           : 0;
-    bottom          : 0;
-    height          : 1px;
+    bottom          : -23px;
+    height          : 5px;
     background-color: #680000;
     transition      : all .5s ease;
     transform       : scale(0);
+    border-radius   : 10px;
 }
 
 .navbar .nav-item .nav-link.active,
@@ -435,6 +477,10 @@ NavBar
 .dropdown-item:hover {
     background-color: #680000;
     color           : #ffffff;
+}
+
+.navbar .btn1 {
+    margin-top: 5px;
 }
 
 /*----------------------
@@ -496,12 +542,14 @@ Mission
 }
 
 .mission .mission-item .circle-dot {
-    position        : absolute;
-    left            : 0;
-    height          : 15px;
-    width           : 15px;
-    border-radius   : 10px;
-    background-color: #680000;
+    position           : absolute;
+    /* left            : 0; */
+    right              : -23px;
+    top                : 6px;
+    height             : 15px;
+    width              : 15px;
+    border-radius      : 10px;
+    background-color   : #680000;
 }
 
 .mission .mission-item p {
@@ -511,7 +559,7 @@ Mission
 }
 
 .mission .mission-item:nth-child(even) {
-    transform: translate(25%);
+    transform: translate(-25%);
 }
 
 /*--------------------
@@ -565,6 +613,13 @@ services
 
 .services .service-info .icon {
     font-size: 40px;
+    width    : 75px;
+    margin   : auto;
+}
+
+.services .service-info h5 {
+    margin-top: 5px;
+    font-size : 30px;
 }
 
 /*---------------------
@@ -685,24 +740,27 @@ web development services
 }
 
 .webservice-item .circle-dot {
-    position        : absolute;
-    left            : 0;
-    height          : 15px;
-    width           : 15px;
-    border-radius   : 10px;
-    background-color: #680000;
+    position           : absolute;
+    /* left            : 0; */
+    right              : -10px;
+    top                : 6px;
+    height             : 15px;
+    width              : 15px;
+    border-radius      : 10px;
+    background-color   : #680000;
 }
 
 .webservice-item {
-    margin      : 30px 0;
-    position    : relative;
-    padding-left: 25px;
+    margin       : 30px 0;
+    position     : relative;
+    padding-left : 25px;
+    padding-right: 15px;
 }
 
 .webservice-item p {
     text-transform: capitalize;
     font-weight   : 400;
-    font-size     : 20px;
+    font-size     : 19px;
 }
 
 /*--------------------
@@ -744,14 +802,14 @@ social media services
 }
 
 .social .webservice-item:nth-child(even) {
-    transform: translate(20%);
+    transform: translate(-20%);
 }
 
 /*--------------------
 motion graphic services
 --------------------*/
 .motion .webservice-item:nth-child(even) {
-    transform: translate(20%);
+    transform: translate(-20%);
 }
 
 /*--------------------
@@ -761,9 +819,9 @@ contact services
     margin-top: 40px;
 }
 
-.contact .section-title h2::before {
+/* .contact .section-title h2::before {
     top: 55px;
-}
+} */
 
 .contact-details h3 {
     color      : #363636;
@@ -781,7 +839,7 @@ contact services
     position        : absolute;
     left            : 0;
     right           : 0;
-    bottom          : 0;
+    bottom          : -10px;
     height          : 4px;
     width           : 80px;
     background-color: #000000;
@@ -834,6 +892,31 @@ Responsive
 ------------------*/
 
 @media (max-width: 1199px) {
+    body::before {
+        top   : -94px;
+        right : -40%;
+        width : 133%;
+        height: 150%;
+    }
+
+    body.index-body::before {
+        top   : 80%;
+        right : -50%;
+        width : 133%;
+        height: 151%;
+    }
+
+    body.service-body::before {
+        height: 150%;
+    }
+    body.body-seo::before{
+        height: 120%;
+    }
+
+    body.body-motion::before {
+        height: 155%;
+    }
+
     .motion .webservice-item:nth-child(even) {
         transform: translate(0);
     }
@@ -844,6 +927,10 @@ Responsive
 }
 
 @media (max-width: 991px) {
+    .navbar .nav-item .nav-link::before {
+        bottom: 0;
+    }
+
     .btn1 {
         margin: 16px 0 0 35px;
     }
@@ -860,7 +947,8 @@ Responsive
         font-size  : 2em;
         line-height: 80px;
     }
-    .hero-text h1{
+
+    .hero-text h1 {
         font-size: 1.5em;
     }
 }
@@ -896,11 +984,25 @@ Responsive
 }
 
 @media (max-width: 575px) {
+    body::before {
+        top   : -94px;
+        right : -132%;
+        width : 231%;
+        height: 113%;
+    }
+
+    body.index-body::before {
+        top   : 80%;
+        right : -123%;
+        width : 219%;
+        height: 124%;
+    }
+
     .navbar .nav-item .nav-link {
         font-size: 22px;
     }
 
-    .hero-text h1{
+    .hero-text h1 {
         font-size: 19;
     }
 
