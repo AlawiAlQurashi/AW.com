@@ -27,6 +27,7 @@ body::before {
     position       : absolute;
     background     : url(../img/Layer\ 0.png) no-repeat padding-box;
     background-size: cover;
+    z-index        : -1;
     top            : -94px;
     right          : -1037px;
     width          : 2075px;
@@ -40,16 +41,39 @@ body.index-body::before {
     height: 2881px;
 }
 
-body.service-body::before {
+body.web-body::before {
+    top   : -94px;
+    right : -960px;
+    width : 1921px;
     height: 1311px;
 }
 
+body.mobile-body::before {
+    top   : -70px;
+    right : -718px;
+    width : 1437px;
+    height: 1136px;
+}
+
 body.body-seo::before {
-    height: 1140px;
+    top   : -68px;
+    right : -551px;
+    width : 1103px;
+    height: 1102px;
+}
+
+body.social-body::before {
+    top   : -68px;
+    right : -778px;
+    width : 1556px;
+    height: 1055px;
 }
 
 body.body-motion::before {
     height: 1700px;
+    top   : -22px;
+    right : -974px;
+    width : 1948px;
 }
 
 * {
@@ -499,10 +523,11 @@ About
 vision
 --------------------*/
 .vision {
-    background     : url(../img/Company-vision.jpg) fixed no-repeat center top;
+    background     : url(../img/Company-vision-arabic.jpg) fixed no-repeat center top;
     background-size: cover;
     z-index        : 1;
     position       : relative;
+    min-height     : 400px;
 }
 
 .vision::before {
@@ -515,7 +540,12 @@ vision
     z-index         : -1;
     background-color: #000000A8;
     opacity         : .7;
-    background-image: linear-gradient(to right, #000000A8, #ffffff);
+    background-image: linear-gradient(to left, #000000A8, #ffffff);
+}
+
+.vision p {
+    font-weight: 600;
+    font-size  : 20px;
 }
 
 .vision p span {
@@ -670,9 +700,11 @@ form input {
     border          : none;
     width           : 50%;
     padding         : 5px;
+    margin-left     : 5px;
 }
 
 form .btnform {
+    width           : 99px;
     background-color: #ffffff;
     color           : #680000;
     padding         : 5px;
@@ -689,7 +721,7 @@ form .btnform {
 .footer .footer-col.intouch h3::after {
     content         : '';
     position        : absolute;
-    left            : 40%;
+    left            : 44%;
     bottom          : -10px;
     /* top          : 20%; */
     height          : 3px;
@@ -906,15 +938,28 @@ Responsive
         height: 151%;
     }
 
-    body.service-body::before {
-        height: 150%;
+    body.web-body::before {
+        height: 151%;
+        right : -1227px;
     }
-    body.body-seo::before{
-        height: 120%;
+
+    body.mobile-body::before {
+        height: 195%;
+        right : -1019px;
+    }
+
+    body.body-seo::before {
+        right: -712px;
+    }
+
+    body.social-body::before {
+        height: 195%;
+        right : -1128px;
     }
 
     body.body-motion::before {
         height: 155%;
+        right : -1371px;
     }
 
     .motion .webservice-item:nth-child(even) {
@@ -996,6 +1041,23 @@ Responsive
         right : -123%;
         width : 219%;
         height: 124%;
+    }
+
+    body.web-body::before {
+        height: 140%;
+        right : -1667px;
+    }
+
+    body.body-seo::before {
+        right: -798px;
+    }
+
+    body.social-body::before {
+        right: -1239px;
+    }
+
+    body.body-motion::before {
+        right: -1671px;
     }
 
     .navbar .nav-item .nav-link {
