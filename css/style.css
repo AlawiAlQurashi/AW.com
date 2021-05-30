@@ -27,16 +27,11 @@ body::before {
     position       : absolute;
     background     : url(../img/Layer.png) no-repeat padding-box;
     background-size: cover;
-    z-index: -1;
-    /* top            : -94px;
+    z-index        : -1;
+    top            : -94px;
     left           : -1037px;
     width          : 2075px;
-    height         : 1873px; */
-
-    top: -94px;
-left: -1037px;
-width: 2075px;
-height: 1870px;
+    height         : 1870px;
 }
 
 body.index-body::before {
@@ -48,41 +43,39 @@ body.index-body::before {
 
 
 body.web-body::before {
-top: -94px;
-left: -960px;
-width: 1921px;
-height: 1311px;
+    top   : -94px;
+    left  : -960px;
+    width : 1921px;
+    height: 1311px;
 }
 
-body.mobile-body::before{
-    top: -70px;
-left: -718px;
-width: 1437px;
-height: 1136px;
+body.mobile-body::before {
+    top   : -70px;
+    left  : -718px;
+    width : 1437px;
+    height: 1136px;
 }
 
 body.body-seo::before {
-    top: -68px;
-left: -551px;
-width: 1103px;
-height: 1102px;
+    top   : -68px;
+    left  : -551px;
+    width : 1103px;
+    height: 1102px;
 }
 
-body.social-body::before{
-    top: -68px;
-left: -778px;
-width: 1556px;
-height: 1055px;
+body.social-body::before {
+    top   : -68px;
+    left  : -778px;
+    width : 1556px;
+    height: 1055px;
 }
-
-
 
 body.body-motion::before {
     height: 1700px;
 
-    top: -22px;
-left: -974px;
-width: 1948px;
+    top  : -22px;
+    left : -974px;
+    width: 1948px;
 }
 
 * {
@@ -702,18 +695,18 @@ form input {
     border          : none;
     width           : 50%;
     padding         : 5px;
-    margin-right:  5px;
+    margin-right    : 5px;
 }
 
 form .btnform {
-    width: 99px;
+    width           : 99px;
     background-color: #ffffff;
-    color: #680000;
-    padding: 5px;
-    border: none;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
+    color           : #680000;
+    padding         : 5px;
+    border          : none;
+    font-size       : 16px;
+    text-transform  : uppercase;
+    font-weight     : 600;
 }
 
 .footer .footer-col.intouch {
@@ -933,21 +926,21 @@ Responsive
 
     body.web-body::before {
         height: 151%;
-        left: -1227px;
+        left  : -1227px;
     }
 
-    body.mobile-body::before{
+    body.mobile-body::before {
         height: 195%;
-            left: -1019px;
-        }
+        left  : -1019px;
+    }
 
-    body.body-seo::before{
+    body.body-seo::before {
         left: -712px;
     }
 
     body.body-motion::before {
         height: 155%;
-        left: -1371px;
+        left  : -1371px;
     }
 
     .motion .webservice-item:nth-child(even) {
@@ -1033,27 +1026,32 @@ Responsive
 
     body.web-body::before {
         height: 140%;
-        left: -1667px;
+        left  : -1667px;
     }
 
-    body.body-seo::before{
-        left: -798px;
+    body.mobile-body::before {
+        left: -1197px;
     }
 
-    body.social-body::before{
-        left: -1239px;
-}
-body.body-motion::before {
-    left: -1671px;
-}
+    body.body-seo::before {
+        left: -829px;
+    }
 
+    body.social-body::before {
+        left: -1298px;
+    }
+
+    body.body-motion::before {
+        left: -1671px;
+    }
 
     .navbar .nav-item .nav-link {
         font-size: 22px;
     }
 
     .hero-text h1 {
-        font-size: 19;
+        font-size  : 17px;
+        white-space: unset;
     }
 
     .hero-text span {
@@ -1066,7 +1064,7 @@ body.body-motion::before {
 
     .webservice .section-title h2,
     .mobservice .section-title h2 {
-        font-size: 27px;
+        font-size: 26px;
     }
 
     .webservice .section-title h2::before,
@@ -1079,7 +1077,7 @@ body.body-motion::before {
     }
 
     .contact .section-title h2 {
-        font-size: 40px;
+        font-size: 37px;
     }
 
     .contact-details h3 {
