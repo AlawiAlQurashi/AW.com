@@ -992,9 +992,11 @@ Responsive
     .mobservice .section-title h2 {
         font-size: 25px;
     }
-
+    
+    .mission .section-title h2::before,
+    .vision .section-title h2::before,
     .mobservice .section-title h2::before {
-        left: 30%;
+        left: 30% !important;
     }
 }
 
