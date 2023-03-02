@@ -759,7 +759,7 @@ web development services
 .webservice h4 {
     text-transform: uppercase;
     font-weight   : 600;
-    color         : #363636;
+    color         : #680000;
 }
 
 .webservice h4 span {
@@ -800,7 +800,7 @@ mobile development services
 .mobservice h4 {
     text-transform: uppercase;
     font-weight   : 600;
-    color         : #363636;
+    color         : #680000;
 }
 
 .mobservice h4 span,
@@ -849,7 +849,7 @@ contact services
 }
 
 .contact-details h3 {
-    color      : #363636;
+    color      : #680000;
     font-weight: 700;
     font-size  : 40px;
     position   : relative;
@@ -896,7 +896,7 @@ contact services
 
 .contact .contact-form input,
 .contact .contact-form textarea {
-    border-color: #363636;
+    border-color: #680000;
 }
 
 .contact-btn {
